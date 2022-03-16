@@ -1,6 +1,6 @@
 ## medial
 
-#Medial axis visualisation software
+#Lambda Medial axis visualisation software
 
 * Requires pyopengl for builtin visualisations on top of standard numpy, scipy etc
 * Generator folder has several scripts for generating triangulations of surfaces
