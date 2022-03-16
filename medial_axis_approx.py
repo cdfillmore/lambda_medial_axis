@@ -16,6 +16,19 @@ import itertools as it
 import pylab
 import json
 
+def write_obj(path, verts, simps):
+	dedup_tris = set([tuple(list(i)) for i in simps])
+	dedup_tris = np.array(list(dedup_tris))
+
+	with open(path,'w') as f:
+		f.write("# Blender v2.79 (sub 0) OBJ File: 'test.blend'\n# www.blender.org\no Test.001\n")
+		for v in verts:
+			f.write('v ' + ' '.join([str(i) for i in v]) + '\n')
+		f.write("s off\n")
+		for s in simps:
+			f.write('f ' + ' '.join([str(i+1) for i in s]) + '\n')
+	pass
+
 def vect(p,q):
     return [ (p[i] - q[i]) for i in range(len(p))]
 
