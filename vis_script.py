@@ -6,7 +6,7 @@ Created on Thu May 14 13:05:31 2020
 @author: cfillmor
 """
 
-from medial_axis_approx import approx_medial_axis2, approx_medial_axis
+from medial_axis_approx import approx_medial_axis2, approx_medial_axis, write_obj
 from stupid_opengl import run2
 
 
@@ -85,3 +85,10 @@ run2(pts10, dtris10, vpts10, faces10)
 time.sleep(waiter)
 run2(pts11, dtris11, vpts11, faces11)
 '''
+
+
+
+
+
+################ write .obj file for blender
+write_obj("./out.obj", vpts, faces)
