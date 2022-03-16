@@ -198,7 +198,7 @@ def approx_medial_axis2(file, MAX, z_max, alpha, LAMBDA, exp_tris):
     for i in voronoi.ridge_dict:
         if -1 in voronoi.ridge_dict[i]:
             continue
-        elif circumsphere_3d([pts[i[0]], pts[i[1]]])[1] > LAMBDA:
+        elif dist([pts[i[0]], pts[i[1]]])[1] > LAMBDA:
             if len(np.intersect1d(voronoi.ridge_dict[i], bad_v, assume_unique = True)) == 0:
                 if exp_tris:
                     faces += triangulate(voronoi.ridge_dict[i])
