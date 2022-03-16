@@ -10,7 +10,7 @@
 * Within the visualisation "space bar" toggles the rotation, "s" toggles the surfaces, "m" toggles the medial axes and "q" quits the visualisation.
 * You can also use the mouse to change the viewing angle.
 * Use the write_obj function to create a .obj file to read into blender
-* /generators/bing.json has a frame from which to create a lambda medial axis frame
+* /pt_sets/bing.json has a frame from which to create a lambda medial axis frame
 
 
 
