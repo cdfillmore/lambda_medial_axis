@@ -17,7 +17,7 @@ waiter = 0.4
 
 ####################### Choose your triangulation
 
-pts, dtris, vpts, faces = approx_medial_axis2('/home/cfillmor/topology/medial/pt_sets/' + 'boro_torus_1000' + '.json', 30, 0, 1, 1.5, True)
+pts, dtris, vpts, faces = approx_medial_axis2('./bing.json', 5, 0, 1.5, 1.5, True)
 '''
 pts2, dtris2, vpts2, faces2 = approx_medial_axis2('/home/cfillmor/topology/medial/pt_sets/' + 'knot_torus_1000' + '.json', 15, 0, .5, .5, True)
 pts3, dtris3, vpts3, faces3 = approx_medial_axis2('/home/cfillmor/topology/medial/pt_sets/' + 'mobius_3000' + '.json', 60, 0, 10, 5, True)
